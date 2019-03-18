@@ -1,0 +1,48 @@
+body {
+    font-family: 'Playfair Display', serif;
+    background-color: rgb(233, 236, 239);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+p {
+    font-size: 1rem !important;
+    line-height: 1.75em;
+}
+
+h1 {
+    font-size: 1.5rem !important;
+    font-weight: 700 !important;
+}
+
+nav {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.navbar-dark .navbar-brand {
+    padding-left: 16.8px;
+    padding-right: 16.8px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    font-family: 'Playfair Display', serif;
+}
+
+.navbar-dark .navbar-toggler {
+    border: none;
+}
+
+.profile-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.subheading {
+    font-style: italic;
+    margin-bottom: 0;
+}
+
+.card {
+    margin: 0 auto;
+}
