@@ -1,36 +1,5 @@
-body {
-    font-family: 'Playfair Display', serif;
-    background-color: rgb(233, 236, 239);
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Open Sans', sans-serif;
-}
-
-p {
-    font-size: 1rem !important;
-    line-height: 1.75em;
-}
-
-h1 {
-    font-size: 1.5rem !important;
-    font-weight: 700 !important;
-}
-
-nav {
-    font-family: 'Open Sans', sans-serif;
-}
-
-.navbar-dark .navbar-brand {
-    padding-left: 16.8px;
-    padding-right: 16.8px;
-    border: 1px solid #fff;
-    border-radius: 4px;
-    font-family: 'Playfair Display', serif;
-}
-
-.navbar-dark .navbar-toggler {
-    border: none;
+.jumbotron {
+    margin-bottom: 0 !important;
 }
 
 .profile-image {
@@ -45,4 +14,26 @@ nav {
 
 .card {
     margin: 0 auto;
+    width: 20rem;
+}
+
+/* Media queries used to change the behavior of the card component and image behavior */
+
+@media (max-width: 1200px) {
+    .card {
+        width: auto;
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    #profile-image-container, h1, .subheading {
+        text-align: center;
+    }
+    
+    #profile-image {
+        max-height: 150px;
+        max-width: 150px;
+        margin-bottom: 1.75rem;
+    }
 }

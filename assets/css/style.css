@@ -1,233 +1,80 @@
-/* * {
-    color: #777;
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    box-sizing: border-box;
-}
-
 html {
-    height: 100%;
-    width: 100%;
-}
+    position: relative;
+    min-height: 100%;
+  }
 
 body {
-    margin: 0;
-    height: 100%;
-    width: 100%;
+    font-family: 'Playfair Display', serif;
+    background-color: rgb(233, 236, 239);
+    margin-bottom: 120px;
 }
 
-header {
-    background-color: #fff;
-    border-bottom: 2px solid #ccc;
-}
-
-nav, .content, footer div {
-    max-width: 960px;
-    width: 100%;
-    margin: 0 auto;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-}
-
-.nav-logo a {
-    color: #fff;
-    background-color: #4aaaa5;
-    font-size: 32px;
-    font-family: 'Georgia', Times, Times New Roman, serif;
-    padding: 22px 30px;
-    text-decoration: none;
-    line-height: 76px;
-}
-
-.nav-logo a:hover {
-    color: #fff;
-    background-color: #3b8884;
-}
-
-.nav-menu {
-    list-style-type: none;
-    display: flex;
-    margin: 0;
-}
-
-.nav-menu li a {
-    line-height: 76px;
-    padding-left: 20px;
-    padding-right: 20px;
-    border-right: 1px solid #ccc;
-    text-decoration: none;
-}
-
-.nav-last-item {
-    border: 0 !important;
-    padding-right: 0 !important;
-}
-
-section {
-    background-image: url('../images/crossline-dots.png');
-    display: inline-block;
-    width: 100%;
-}
-
-.content {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    margin: 40px auto;
-    padding: 30px;
-    min-height: 100%;
-}
-
-.content::after {
-    clear: both;
-}
-
-h1 {
-    color: #4aaaa5;
-    font-family: 'Georgia', Times, Times New Roman, serif;
-    margin-top: 0;
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Open Sans', sans-serif;
 }
 
 p {
-    line-height: 2em;
-    margin-bottom: 40px;
+    font-size: 1rem !important;
+    line-height: 1.75em;
 }
 
-hr {
-    color: #ddd;
-    margin: 0 0 30px;
+h1 {
+    font-size: 1.5rem !important;
+    font-weight: 700 !important;
 }
 
-#profile-image {
-    float: left;
-    margin-right: 30px;
-    height: 200px;
-    width: 200px;
+nav {
+    font-family: 'Open Sans', sans-serif;
 }
 
-#profile-image::after {
-    clear: both;
+.navbar-dark .navbar-brand {
+    padding-left: 16.8px;
+    padding-right: 16.8px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    font-family: 'Playfair Display', serif;
 }
 
-footer {
-    background-color: #666;
-    border-top: 8px solid #4aaaa5;
+.navbar-dark .navbar-toggler {
+    border: none;
 }
 
-footer div {
-    padding: 20px 0;
+.navbar-brand:hover, .navbar-brand:focus, .navbar-brand:active {
+    color: #0062cc !important;
+    border-color: #0062cc;
 }
 
-footer div p {
-    color: #fff;
-    margin: 0;
-    text-align: center;
-    font-size: 12px;
+.btn {
+    font-family: 'Open Sans', sans-serif;
 }
 
-.portfolio-container {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.portfolio-item {
-    height: 210px;
-    width: 280px;
-    background-size: cover;
-    margin-right: 40px;
-    margin-bottom: 50px;
-    position: relative;
-}
-
-.portfolio-item:nth-child(1) {
-    background-image: url('../images/hangman.jpg');
-}
-
-.portfolio-item:nth-child(2) {
-    background-image: url('../images/rpg.jpg');
-}
-
-.portfolio-item:nth-child(3) {
-    background-image: url('../images/trivia.jpg');
-}
-
-.portfolio-item:nth-child(4) {
-    background-image: url('../images/info_widget.jpg');
-}
-
-.portfolio-item:nth-child(5) {
-    background-image: url('../images/rps.jpg');
-}
-
-.portfolio-item div {
-    width: 100%;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    text-align: center;
+.footer {
     position: absolute;
-    bottom: 10px;
-    background-color: #4aaaa5;
-    color: #fff;
-    font-family: 'Georgia', Times, Times New Roman, serif;
-    font-size: 20px;
-}
-
-.portfolio-item:hover, .portfolio-item:focus {
-    opacity: 0.5;
-    cursor: pointer;
-}
-
-.last-paragraph {
-    margin-bottom: 0;
-}
-
-input, textarea {
-    font-size: 14px;
-    padding: 10px;
+    bottom: 0;
     width: 100%;
-    margin-bottom: 16px;
+    height: 60px;
+    /* line-height: 60px; */
+    background-color: #343a40;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    color: #fff !important;
+    line-height:28px;
 }
 
-input::placeholder {
-    color: #999;
-}
+/* Media queries used to change collapsed nav margin and padding */
 
-form p {
-    margin-top: 0;
-    margin-bottom: 5px;
-    line-height: 1.5em;
-}
+@media (max-width: 768px) {
+    .navbar-nav {
+        margin: 0.75rem 0;
+    }
 
-#message {
-    height: 200px;
-    border-color: #ddd;
-}
+    .nav-link {
+        padding: 0.75rem 0;
+    }
 
-input, textarea{
-    color: #777;
+    #nav-cta {
+        width: 100%;
+        margin-bottom: 0.75rem;
+    }
 }
-
-input[type=submit] {
-    padding: 10px 20px; 
-    background-color: #4aaaa5;
-    border-color: #4aaaa5;
-    color: #fff;
-    cursor: pointer;
-    max-width: 125px;
-    width: 100%;
-}
-
-a {
-    color: #4aaaa5;
-    text-decoration: none;
-}
-
-a:hover, a:focus, .active {
-    color: #3b8884;
-}
-
-input[type=submit]:hover, input[type=submit]:active {
-    background-color: #3b8884;
-    border-color: #3b8884;
-} */
