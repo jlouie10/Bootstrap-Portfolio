@@ -23,6 +23,10 @@ h1 {
     font-weight: 700 !important;
 }
 
+h2 {
+    font-size: 1.5rem;
+}
+
 nav {
     font-family: 'Open Sans', sans-serif;
 }
@@ -48,6 +52,11 @@ nav {
     font-family: 'Open Sans', sans-serif;
 }
 
+.card {
+    margin: 0 auto 2rem;
+    width: 20rem;
+}
+
 .footer {
     position: absolute;
     bottom: 0;
@@ -63,6 +72,12 @@ nav {
 }
 
 /* Media queries used to change collapsed nav margin and padding */
+
+@media (max-width: 1200px) {
+    .card {
+        width: auto;
+    }
+}
 
 @media (max-width: 768px) {
     .navbar-nav {

@@ -1,0 +1,13 @@
+.contact .row div {
+    margin: 2rem auto;
+}
+
+form {
+    font-family: 'Open Sans', sans-serif;
+}
+
+@media (max-width: 768px) {
+    .btn {
+        width: 100%;
+    }
+}

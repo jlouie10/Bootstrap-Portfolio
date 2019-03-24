@@ -12,22 +12,21 @@
     margin-bottom: 0;
 }
 
-.card {
-    margin: 0 auto;
-    width: 20rem;
+.jobs .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.jobs img {
+    margin-bottom: 1.5rem;
+    height: 140px;
+    width: 140px;
 }
 
 /* Media queries used to change the behavior of the card component and image behavior */
 
-@media (max-width: 1200px) {
-    .card {
-        width: auto;
-        margin-bottom: 2rem;
-    }
-}
-
 @media (max-width: 768px) {
-    #profile-image-container, h1, .subheading {
+    .jumbotron {
         text-align: center;
     }
     
