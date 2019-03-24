@@ -1,7 +1,0 @@
-/* Issues */
-- Portfolio cards have differing heights, workaround was to remove portfolio descriptions
-- Bootstrap form submit action broken, workaround was to modify the mailto action and omit email (redundant)
-
-
-/* Changes */
-- Buttons will go full width in smaller display sizes
