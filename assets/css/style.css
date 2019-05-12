@@ -71,6 +71,16 @@ nav {
     line-height:28px;
 }
 
+.linkedin-link {
+    margin-left: 5rem;
+    font-size: 1rem;
+}
+
+.github-footer-link {
+    margin-left: 0.75rem;
+    font-size: 1rem;
+}
+
 /* Media queries used to change collapsed nav margin and padding */
 
 @media (max-width: 1200px) {
